@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Enhanced Wing Airflow Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Wing Airflow Simulation</h1>
+
+  <div class="controls">
+    <label>Incoming Air Speed (m/s): <input type="number" id="inputSpeed" value="30" /></label>
+    <label>Angle of Attack (°): <input type="range" id="angleInput" min="-15" max="15" value="0" /></label>
+    <button onclick="startSimulation()">Start</button>
+    <p><strong>Computed Lift Force:</strong> <span id="liftForce">0</span> N</p>
+  </div>
+
+  <svg id="wingSim" width="800" height="400">
+    <g id="flowLines"></g>
+    <g id="wingGroup" transform="rotate(0, 200, 200)">
+      <path id="wing" d="M100,200 Q200,150 300,200 Q200,250 100,200 Z" fill="#888" />
+    </g>
+  </svg>
+
+  <script src="script.js"></script>
+</body>
+</html>

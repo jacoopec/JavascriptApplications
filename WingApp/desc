@@ -1,0 +1,152 @@
+in aerodynamics, there are several simplified equations to describe the relationship between air pressure and velocity over a wing, especially under steady, incompressible flow conditions. The most common is:
+
+✅ Bernoulli’s Equation (Simplified Form)
+For incompressible, non-viscous, steady flow, Bernoulli’s equation is:
+
+𝑃
++
+1
+2
+𝜌
+𝑣
+2
+=
+constant
+P+ 
+2
+1
+​
+ ρv 
+2
+ =constant
+Where:
+
+𝑃
+P = static pressure (Pa)
+
+𝜌
+ρ = air density (kg/m³)
+
+𝑣
+v = flow velocity (m/s)
+
+🧠 Key Insight for a Wing:
+If air moves faster over the top of a wing than underneath (due to the shape or angle), then:
+
+Top Surface:
+
+Higher velocity → lower pressure
+
+Bottom Surface:
+
+Lower velocity → higher pressure
+
+This pressure difference creates lift.
+
+🧪 Example:
+Let’s say:
+
+Air density 
+𝜌
+=
+1.225
+ 
+kg/m
+3
+ρ=1.225kg/m 
+3
+ 
+
+Velocity over top of wing 
+𝑣
+top
+=
+40
+ 
+m/s
+v 
+top
+​
+ =40m/s
+
+Velocity under wing 
+𝑣
+bottom
+=
+30
+ 
+m/s
+v 
+bottom
+​
+ =30m/s
+
+Then pressure difference:
+
+Δ
+𝑃
+=
+1
+2
+𝜌
+(
+𝑣
+bottom
+2
+−
+𝑣
+top
+2
+)
+ΔP= 
+2
+1
+​
+ ρ(v 
+bottom
+2
+​
+ −v 
+top
+2
+​
+ )
+Δ
+𝑃
+=
+0.5
+⋅
+1.225
+⋅
+(
+30
+2
+−
+40
+2
+)
+=
+−
+612.5
+ 
+Pa
+ΔP=0.5⋅1.225⋅(30 
+2
+ −40 
+2
+ )=−612.5Pa
+Negative result → pressure is lower on top → lift is generated.
+
+Animate each airflow line moving across the screen
+
+Lines react dynamically to the shape and position of the wing
+
+Slider to rotate the wing (e.g. -15° to +15°)
+
+Affects velocity distribution and lift force
+
+Overlay color heatmap or gradient along the wing surface
+
+Red = high pressure, blue = low pressure
+
+Updates in real time with airflow changes

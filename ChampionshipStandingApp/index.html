@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app="championshipApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Championship App</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <script src="src/app.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body ng-controller="ChampionshipController">
+  
+  <div class="above-container">
+
+    <div class="input-card">
+      <h3> Enter Match Result</h3>
+      <form ng-submit="addMatch()">
+        <label>Team 1:
+          <input ng-model="match.team1" placeholder="Enter team 1 name" required>
+        </label>
+        <label>Score 1:
+          <input type="number" placeholder="Enter team 1 score" ng-model="match.score1" required>
+        </label>
+        <label>Team 2:
+          <input ng-model="match.team2" required placeholder="Enter team 2 name">
+        </label>
+        <label>Score 2:
+          <input type="number" ng-model="match.score2" required placeholder="Enter team 2 score">
+        </label>
+        <button type="submit">Submit Match</button>
+      </form>
+    </div>
+
+
+
+    <div class="matches" layout="column" layout-align="start center">
+      <h3>Match Results</h3>
+      <md-content layout-padding>
+        <md-list>
+          <md-list-item class="md-2-line above-container" ng-repeat="m in matches track by $index">
+            <div class="md-list-item-text" style="align-self: center">
+              <h4>{{ m.team1 }} {{ m.score1 }} - {{ m.score2 }} {{ m.team2 }}</h4>
+            </div>
+    
+            <md-button class="md-icon-button" aria-label="Delete"  style="align-self: center" ng-click="deleteMatch($index)">
+              <md-icon class="material-icons">delete</md-icon>
+            </md-button>
+          </md-list-item>
+        </md-list>
+    
+        <!-- Save Button -->
+        <md-button class="md-raised md-primary" ng-click="saveMatches()">
+          Save Match Results
+        </md-button>
+      </md-content>
+    </div>
+    
+
+  </div>
+
+  
+    <div class="standings">
+      <h3> Championship Standings</h3>
+      <table class="standings-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Team</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="team in getStandings() track by $index">
+            <td>{{ $index + 1 }}</td>
+            <td>{{ team.name }}</td>
+            <td>{{ team.points }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  
+
+  
+
+
+</body>
+</html>

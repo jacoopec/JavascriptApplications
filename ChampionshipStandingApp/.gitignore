@@ -1,0 +1,2 @@
+# Normal .gitignore to skip node_modules
+node_modules/

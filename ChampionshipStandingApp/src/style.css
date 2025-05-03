@@ -1,0 +1,110 @@
+body { 
+    font-family: Arial; 
+    margin: 20px; 
+}
+
+.teams, .form, .standings, .matches {
+     margin-bottom: 30px; 
+}
+
+.inline { 
+    display: inline-block; 
+    margin-right: 20px; 
+    vertical-align: top; 
+}
+
+
+.input-card {
+    width: 320px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 20px;
+}
+
+.input-card h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.input-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-card label {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.input-card input {
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.input-card button {
+margin-top: 10px;
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 6px;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.input-card button:hover {
+background-color: #45a049;
+}
+
+
+.standings {
+    margin-top: 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .standings h3 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .standings-table th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .standings-table td {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .standings-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .standings-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+.above-container{
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "championship-app",
+  "version": "1.0.0",
+  "description": "AngularJS app to track championship match results",
+  "scripts": {
+    "start": "lite-server",
+    "test": "karma start"
+  },
+  "devDependencies": {
+    "jasmine-core": "^4.5.0",
+    "karma": "^6.4.2",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^5.1.0",
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "championship-app": "file:",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.14.1"
+  }
+}

@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f3;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, auto);
+}
+
+label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.simulation-area {
+  position: relative;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.spring {
+  width: 10px;
+  height: 100px;
+  background: repeating-linear-gradient(45deg, #ccc, #ccc 5px, #999 5px, #999 10px);
+  margin-bottom: 5px;
+}
+
+.damper {
+  width: 20px;
+  height: 80px;
+  background-color: #666;
+  margin-bottom: 5px;
+}
+
+.car {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.car-body {
+  width: 120px;
+  height: 40px;
+  background-color: #444;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.wheel {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+canvas {
+  background: #fff;
+  border: 1px solid #ccc;
+}
